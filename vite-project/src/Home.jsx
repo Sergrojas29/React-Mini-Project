@@ -3,7 +3,7 @@ import { Chip, Stack, Grid, Typography, Button, Accordion, AccordionSummary, Acc
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 // import axios from 'axios';
 import { dictionariesApiUrl, randomWordUrl } from './common/constants'
-
+import TopDrawer from './components/TopDrawer'
 
 function Home() {
     const [dictionaries, setDictionaries] = useState([]);
@@ -32,10 +32,12 @@ function Home() {
 
     return (
         <Grid container
-            justifyContent='flex-start'
-            alignItems='flex-start'
-            sx={{height: '95vh', border: 'solid 1pt red' }}
+        justifyContent='flex-start'
+        alignItems='flex-start'
+        sx={{height: '100%', border: 'solid 1pt red' }}
         >
+            <TopDrawer/>
+            
             <Grid item>
                 {activeDictionary && (
                     <Typography variant='h4'> {activeDictionary.title} </Typography>
@@ -71,6 +73,7 @@ function Home() {
                     </Accordion>
                 )}
             </Grid>
+            
         </Grid >
     )
 
