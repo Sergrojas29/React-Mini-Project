@@ -40,7 +40,7 @@ export default function TopDrawer() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {['Multipe Choise', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+                {['Multipe Choice', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
                     <ListItem key={text} disablePadding>
                         <ListItemButton onClick={() => {navigate('./multi')}}>
                             <ListItemText primary={text} style={{ color: 'black' }} />
@@ -55,7 +55,7 @@ export default function TopDrawer() {
         <div>
             {['top'].map((anchor) => (
                 <React.Fragment key={anchor}>
-                    <Button onClick={toggleDrawer(anchor, true)}>Open Drawer</Button>
+                    <Button onClick={toggleDrawer(anchor, true)} style={{color: 'WHITE'}}>MENU</Button>
                     <SwipeableDrawer
                         anchor={anchor}
                         open={state[anchor]}
