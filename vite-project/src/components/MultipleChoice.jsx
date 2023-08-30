@@ -1,5 +1,16 @@
+
+import { useEffect, useState } from 'react'
+import ChipStack from './ChipStack'
+
+
+
 const MultipleChoice = () => {
-    return <div>Multiple Choice</div>
+    // const [activeDictionary, setActiveDictionary] = useState(undefined);
+
+    return (
+        <h1>Hi</h1>
+    // <ChipStack setActiveDictionary={setActiveDictionary} />
+        )
 }
 
 
