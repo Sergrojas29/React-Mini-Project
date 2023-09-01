@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from 'react'
+<<<<<<< HEAD
 import { multiChoiceUrl } from '../common/constants'
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -113,6 +114,19 @@ const MultipleChoice = (props) => {
             </div>
         </div>
     )
+=======
+import ChipStack from './ChipStack'
+
+
+
+const MultipleChoice = () => {
+    // const [activeDictionary, setActiveDictionary] = useState(undefined);
+
+    return (
+        <h1>Hi</h1>
+    // <ChipStack setActiveDictionary={setActiveDictionary} />
+        )
+>>>>>>> 3c308df64e8e315b956f061212767b4686d3a7b9
 }
 
 
